@@ -1,4 +1,4 @@
-void processOrder({
+double processOrder({
   required int orderId,
   required double itemPrice,
   String? promoCode,
@@ -14,8 +14,10 @@ void processOrder({
   return total;
 }
 
-processOrder(
-  orderId: 1,
-  itemPrice: 10000.0,
-  promoCode: 'SAVE10',
-);
+void main() {
+  processOrder(
+    orderId: 1,
+    itemPrice: 10000.0,
+    promoCode: 'SAVE10',
+  );
+}
